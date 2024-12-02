@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(246, 240, 235, 1);
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.navigationBar{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+}
+.imageBox img{
+    padding: 25px 45px;
+}
+.hamburg{
+    display: none;
+}
+.menuBox{
+    align-self: center;
+}
+.menuBox span{
+    display: none;
+}
+.menuBox a{
+    text-decoration: none;
+    color: rgba(73, 33, 24, 1);
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 60px;
+}
+.menuBox a:hover{
+    text-decoration: underline;
+}
+main div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h-tag h1{
+    color: rgba(73, 33, 24, 1);
+    margin-block: 80px;
+}
+.img-container .topImg{
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 250px;
+}
+.img-container span{
+    color: rgba(73, 33, 24, 1);
+    font-size: 1.5rem;
+    margin-top: 24px;
+}
+.h-tag img{
+    width: 100%;
+    max-width: 1000px;
+}
+footer{
+    width: 100%;
+    margin-block: 3rem;
+}
+.go-to-top{
+    width: 95%;
+}
+footer a{
+    display: block;
+    color: rgba(73, 33, 24, 1);
+    font-size: 2rem;
+    text-align: end;
+    font-weight: 700;
+}
+footer span{
+    display: block;
+    color: rgba(133, 133, 133, 1);
+    font-size: 24px;
+    text-align: center;
+    margin-top: 56px;
+}
+@media(max-width:1200px){
+    .menuBox a{
+        font-size: 16px;
+        margin-right: 40px;
+    }
+    main img{
+        padding-inline: 20px;
+    }
+}
+/* @media(max-width:920px){
+    .menuBox a{
+        font-size: 12px;
+        margin-right: 15px;
+    }
+} */
+@media(max-width:920px){
+    .navigationBar{
+        background-color: transparent;
+    }
+    .menuBox{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .menu a + a{
+        margin-top: 20px;
+    }
+    .imageBox img{
+        padding: 20px 20px;
+    }
+    .menu span{
+        display: block;
+        position: relative;
+        top: -10px;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+    .hamburg-icone{
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-bottom-left-radius: 100%;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .hamburg-icone span{
+        display: block;
+        cursor: pointer;
+        margin-inline: 45%;
+        margin-block: 20%;
+        font-size: 1.3rem;
+    }
+    .img-container .topImg{
+        margin-top: 150px;
+    }
+    .h-tag h1{
+        font-size: 1rem;
+        margin-block: 40px;
+    }
+    .img-container span{
+        font-size: 0.8rem;
+    }
+    footer a{
+        font-size: 1.5rem;
+    }
+    footer span{
+        font-size: 16px;
+        margin-top: 42px;
+    }
+}
